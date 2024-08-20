@@ -8,3 +8,7 @@
 /dataSources.local.xml
 
 /target/
+
+# IntelliJ IDEA files
+/.idea
+/*.iml
