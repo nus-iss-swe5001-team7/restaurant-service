@@ -2,10 +2,8 @@ package com.nus.edu.se.restaurant_service.dao;
 
 
 import com.nus.edu.se.restaurant_service.model.Restaurants;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.mongodb.repository.MongoRepository;
 
-import java.util.UUID;
-
-public interface RestaurantRepository extends JpaRepository<Restaurants, UUID> {
+public interface RestaurantRepository extends MongoRepository<Restaurants, String> {
     Restaurants findByRestaurantName(String restaurantName);
 }
