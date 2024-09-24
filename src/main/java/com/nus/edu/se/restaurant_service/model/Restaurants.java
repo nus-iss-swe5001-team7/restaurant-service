@@ -1,30 +1,39 @@
 package com.nus.edu.se.restaurant_service.model;
 
-import jakarta.persistence.*;
 import lombok.*;
-import org.hibernate.annotations.UuidGenerator;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.UUID;
+import java.util.List;
 
+@Document(collection = "restaurants")
 @Data
-@Entity
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
 public class Restaurants {
 
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    private Integer restaurantId;
-
     @Id
-    @UuidGenerator
-    @Column(name = "restaurant_id", nullable = false)
-    private UUID id;
-
-    @Column(name = "restaurant_name", nullable = false)
+    private String id;
     private String restaurantName;
+    private String cuisineType;
+    private String location;
+    private float rating;
+    private String restaurantImgURL;
+    private List<Menus> menus;
 
+    public Restaurants(String restaurantName,
+                       String cuisineType,
+                       String location,
+                       float rating,
+                       String restaurantImgURL,
+                       List<Menus> menus) {
+        this.restaurantName = restaurantName;
+        this.cuisineType = cuisineType;
+        this.location = location;
+        this.rating = rating;
+        this.restaurantImgURL = restaurantImgURL;
+        this.menus = menus;
+    }
 }
