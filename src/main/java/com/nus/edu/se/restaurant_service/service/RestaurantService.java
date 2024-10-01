@@ -31,7 +31,7 @@ public class RestaurantService {
         return new ResponseEntity<>(new Restaurants(), HttpStatus.BAD_REQUEST);
     }
 
-    public ResponseEntity<Restaurants> getRestaurantById(String id) {
+    public ResponseEntity<Restaurants> retrieveRestaurantById(String id) {
         try {
             Optional<Restaurants> restaurants = restaurantRepository.findById(id);
             return restaurants.map(value -> new ResponseEntity<>(value, HttpStatus.OK)).orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
@@ -39,6 +39,14 @@ public class RestaurantService {
             e.printStackTrace();
         }
         return new ResponseEntity<>(new Restaurants(), HttpStatus.BAD_REQUEST);
+    }
+
+    public ResponseEntity<Restaurants> getRestaurantById(String id, String token) throws AuthenticationException {
+            if (Boolean.TRUE.equals(jwtTokenInterface.validateToken(token).getBody())) {
+                return retrieveRestaurantById(id);
+            } else {
+                throw new AuthenticationException("User is not authenticated to getRestaurantById!");
+            }
     }
 
     public String resolveToken(HttpServletRequest request) {
