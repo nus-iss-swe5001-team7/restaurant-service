@@ -1,6 +1,0 @@
-com/nus/edu/se/restaurant_service/boundary/RestaurantController.class
-com/nus/edu/se/restaurant_service/dao/RestaurantRepository.class
-com/nus/edu/se/restaurant_service/model/Restaurants.class
-com/nus/edu/se/restaurant_service/service/RestaurantService.class
-com/nus/edu/se/restaurant_service/RestaurantServiceApplication.class
-com/nus/edu/se/restaurant_service/model/Restaurants$RestaurantsBuilder.class
