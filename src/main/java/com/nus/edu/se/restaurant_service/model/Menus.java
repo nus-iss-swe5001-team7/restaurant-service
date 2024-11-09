@@ -6,7 +6,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "menus")
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
@@ -21,12 +20,14 @@ public class Menus {
     private String menuImageURL;
 
     public Menus(String menuName,
+                 String menuId,
                  String description,
                  float menuPrice,
                  String category,
                  boolean available,
                  String menuImageURL) {
         this.menuName = menuName;
+        this.id = menuId;
         this.description = description;
         this.menuPrice = menuPrice;
         this.category = category;
