@@ -50,20 +50,20 @@ public class RestaurantServiceApplication {
         Map<String, List<String>> spicyPreference = createSpicyPreference();
         Map<String, List<String>> icedTeaPreferences = createIcedTeaPreferences();
 
-        Menus menu1 = new Menus("Nasi Lemak",
+        Menus menu1 = new Menus("Nasi Lemak","6711074323ad9d42043cff57",
                 "Coconut milk rice served with sambal, fried chicken, boiled egg, cucumber, and fried anchovies",
                 10.99f,
                 "Main Course",
                 TRUE,
                 "https://images.pexels.com/photos/11912788/pexels-photo-11912788.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
                 spicyPreference);
-        Menus menu2 = new Menus("Satay",
+        Menus menu2 = new Menus("Satay","6711074323ad9d42043cff58",
                 "Grilled skewered meat served with peanut sauce",
                 8.50f,
                 "Appetizer",
                 TRUE,
                 "https://images.pexels.com/photos/19792082/pexels-photo-19792082/free-photo-of-food-plate-wood-dinner.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-        Menus menu3 = new Menus("Laksa",
+        Menus menu3 = new Menus("Laksa","6711074323ad9d42043cff59",
                 "Spicy noodle soup with coconut milk, shrimp, chicken, and tofu",
                 11.99f,
                 "Main Course",
@@ -83,7 +83,7 @@ public class RestaurantServiceApplication {
 
         restaurantRepository.insert(restaurant1);
 
-        Menus menu4 = new Menus("Steamed Dumplings",
+        Menus menu4 = new Menus("Steamed Dumplings","6711074323ad9d42043cff5b",
                 "Delicious steamed dumplings filled with pork and cabbage.",
                 8.99f,
                 "Appetizers",
@@ -91,7 +91,7 @@ public class RestaurantServiceApplication {
                 "https://images.pexels.com/photos/7251866/pexels-photo-7251866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
                 null);
 
-        Menus menu5 = new Menus("Pan-Fried Dumplings",
+        Menus menu5 = new Menus("Pan-Fried Dumplings","6711074323ad9d42043cff5c",
                 "Crispy pan-fried dumplings filled with savory pork and chives.",
                 9.99f,
                 "Appetizers",
@@ -99,7 +99,7 @@ public class RestaurantServiceApplication {
                 "https://images.pexels.com/photos/7287723/pexels-photo-7287723.jpeg?auto=compress&cs=tinysrgb&w=1200",
                 spicyPreference);
 
-        Menus menu6 = new Menus("Dumpling Noodle Soup",
+        Menus menu6 = new Menus("Dumpling Noodle Soup","6711074323ad9d42043cff5d",
                 "Noodle soup served with delicious dumplings, vegetables, and broth.",
                 11.99f,
                 "Main Course",
@@ -121,14 +121,14 @@ public class RestaurantServiceApplication {
 
         restaurantRepository.insert(restaurant2);
 
-        Menus menu7 = new Menus("Tom Yum Soup",
+        Menus menu7 = new Menus("Tom Yum Soup","6711074323ad9d42043cff5f",
                 "Traditional Thai hot and sour soup with shrimp, lemongrass, and chili.",
                 9.99f,
                 "Soups",
                 TRUE,
                 "https://images.pexels.com/photos/10398943/pexels-photo-10398943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
 
-        Menus menu8 = new Menus("Pad Thai",
+        Menus menu8 = new Menus("Pad Thai","6711074323ad9d42043cff60",
                 "Stir-fried rice noodles with shrimp, tofu, bean sprouts, and peanuts.",
                 11.99f,
                 "Noodles",
@@ -136,14 +136,14 @@ public class RestaurantServiceApplication {
                 "https://images.pexels.com/photos/12481161/pexels-photo-12481161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
                 spicyPreference);
 
-        Menus menu9 = new Menus("Mango Sticky Rice",
+        Menus menu9 = new Menus("Mango Sticky Rice","6711074323ad9d42043cff61",
                 "Sweet sticky rice topped with ripe mango slices and coconut milk.",
                 7.99f,
                 "Desserts",
                 TRUE,
                 "https://images.pexels.com/photos/19856579/pexels-photo-19856579/free-photo-of-food-plate-wood-dinner.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
 
-        Menus menu10 = new Menus("Thai Iced Tea",
+        Menus menu10 = new Menus("Thai Iced Tea","6711074323ad9d42043cff62",
                 "Sweet and creamy Thai iced tea with condensed milk.",
                 3.99f,
                 "Beverages",
@@ -163,7 +163,7 @@ public class RestaurantServiceApplication {
 
         restaurantRepository.insert(restaurant3);
 
-        Menus menu11 = new Menus("Tandoori Chicken Rice",
+        Menus menu11 = new Menus("Tandoori Chicken Rice","6711074323ad9d42043cff64",
                 "Tandoori Chicken Rice",
                 10f,
                 "Tandoori",
@@ -182,7 +182,7 @@ public class RestaurantServiceApplication {
 
         restaurantRepository.insert(restaurant4);
 
-        Menus menu12 = new Menus("Thai Iced Tea",
+        Menus menu12 = new Menus("Thai Iced Tea","6711074323ad9d42043cff66",
                 "Sweet and creamy Thai iced tea with condensed milk.",
                 3.99f,
                 "Beverages",

@@ -50,12 +50,14 @@ public class Menus {
 
 
     public Menus(String menuName,
+                 String menuId,
                  String description,
                  float menuPrice,
                  String category,
                  boolean available,
                  String menuImageURL) {
         this.menuName = menuName;
+        this.id = menuId;
         this.description = description;
         this.menuPrice = menuPrice;
         this.category = category;
@@ -64,6 +66,7 @@ public class Menus {
     }
 
     public Menus(String menuName,
+                 String menuId,
                  String description,
                  float menuPrice,
                  String category,
@@ -71,6 +74,7 @@ public class Menus {
                  String menuImageURL,
                  Map<String, List<String>> preferences) {
         this.menuName = menuName;
+        this.id = menuId;
         this.description = description;
         this.menuPrice = menuPrice;
         this.category = category;
