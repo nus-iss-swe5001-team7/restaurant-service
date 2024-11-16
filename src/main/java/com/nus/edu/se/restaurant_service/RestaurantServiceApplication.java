@@ -154,7 +154,7 @@ public class RestaurantServiceApplication {
         menuRepository.insert(Arrays.asList(menu7, menu8, menu9, menu10));
 
         Restaurants restaurant3 = new Restaurants("Thai Spice", "6711074323ad9d42043cff63",
-                "Bedok Central Post Office, 218 Bedok North Street 1, Singapore 460218, Singapore", "1.3273451", "1.3273451",
+                "Bedok Central Post Office, 218 Bedok North Street 1, Singapore 460218, Singapore", "1.3273451", "103.934300",
                 "Thai",
                 "Central",
                 4.0f,
