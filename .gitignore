@@ -12,4 +12,8 @@
 # IntelliJ IDEA files
 /.idea
 /*.iml
+
 *.class
+
+target
+
